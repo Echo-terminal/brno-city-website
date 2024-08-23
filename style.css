@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation img{
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+
+.navigation-top{
+    display:flex;
+    justify-content:start;
+    align-items: center;
+    max-width: 720px;
+}
+
+.navigation-top a{
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+a:hover{
+    color: #9D8665; 
+}
+
+li{
+    list-style-type: none;
+}
+
+.welcome{
+    background-image: url('./assets/images/Brno-transformed.png');
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 1152px;
+    background-position: right;
+}
+
+.welcome-container{
+    padding-top: 100px;
+    max-width: 1700px;
+    margin: auto;
+}
+
+.welcome h1{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.welcome h2{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.explore-button{
+    margin-top: 100px;
+    background: #710707;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    transition: 1s;
+}
+
+.explore-button:hover{
+    background-color: #9d8665;
+}
+
+.container{
+    margin: auto;
+}
+
+.container h1{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #9D8665;
+}
+
+.container hr{
+    width: 90%;
+    height: 3px;
+
+    background: #710707;
+    border-radius: 0px;
+}
+
+.places ul{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    flex-wrap: wrap;
+}
+
+.places li{
+    margin: 20px;
+}
+
+.place img{
+    width: 440px;
+    height: 285px;
+}
+
+.place h3{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.place p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 26px;
+    
+    color: #000000;
+
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.place.expanded {
+    width: 100%;
+}
+
+.place .full{
+    display: none;
+}
+
+.place.expanded .full{
+    display: block;
+}
+
+
+.place.expanded img {
+    width: 60%;
+    min-width: 440px;
+    height: auto;
+}
+
+.place.expanded p {
+    height: max-content;
+    width: 100%;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.video{
+    background-color: #000;
+    padding-bottom: 90px;
+}
+
+.video h1{
+    color: #fff;
+}
+
+.video hr{
+    background-color: #fff;
+    border: none;
+}
+
+.player{
+    max-width: 1440px;
+    margin-top: 90px;
+    background-color: #dfdfdf;
+}
+.player video{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0;
+    cursor: pointer;
+}
+.controls{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+}
+.controls div{
+    margin: 0 24px;
+}
+.controls img{
+    cursor: pointer;
+}
+.controls img:hover{
+    filter:opacity(0.7);
+    transition: 0.4s;
+}
+.controls-set{
+    display: flex;
+    justify-content: center;
+}
+.controls_play{
+    margin: 0 41px;
+}
+.Progress{
+    width: 820px;
+    cursor: pointer;
+}
+.scroll-bar{
+    appearance: none;
+    height: 8px;
+    background: linear-gradient(
+        to right,
+        #24809e 0%,
+        #24809e 47%,
+        #fff 47%,
+        #fff 100%
+      );
+}
+.scroll-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.volume-set{
+    display: flex;
+    align-items: center;
+}
+.volume{
+    margin-left:20px;
+    width: 155px;
+    cursor: pointer;
+}
+
+#map {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 720px;
+    width: 100%;
+}
+
+footer{
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 150px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+footer li{
+    padding-right: 100px;
+}
+
+footer a{
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+@media (min-width: 1440px){
+    .welcome{
+        height: 750px;
+        background-size: 1152px;
+    }
+    
+    .welcome h1{
+        font-size: 80px;
+        line-height: 90px;
+       }
+    
+    .welcome h2{
+        font-size: 28px;
+        line-height: 33px;
+    }
+    
+    .explore-button{
+        width: 400px;
+        height: 100px;
+        font-size: 28px;
+        line-height: 26px;
+    }   
+
+    .container{
+        max-width: 1440px;
+    }
+
+    .container h1{
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .controls img{
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+    }
+    
+    #map {
+        height: 720px;
+    }
+}
+
+@media (max-width: 1439px){
+    .welcome{
+        height: 560px;
+        background-size: 720px;
+    }
+    
+    .welcome h1{
+        font-size: 70px;
+        line-height: 80px;
+       }
+    
+    .welcome h2{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
+    .explore-button{
+        width: 400px;
+        height: 100px;
+        font-size: 24px;
+        line-height: 26px;
+    }   
+
+    .container{
+        max-width: 960px;
+    }
+
+    .container h1{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    
+    .controls img{
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+    }
+    
+    #map {
+        height: 560px;
+    }
+}
+
+@media (max-width: 959px){
+    .welcome{
+        height: 560px;
+        background: #000;
+    }
+    
+    .welcome h1{
+        font-size: 70px;
+        line-height: 80px;
+       }
+    
+    .welcome h2{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
+    .explore-button{
+        width: 400px;
+        height: 100px;
+        font-size: 24px;
+        line-height: 26px;
+    }   
+
+    .container{
+        max-width: 720px;
+    }
+
+    .container h1{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    
+    .controls img{
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+    }
+    
+    .controls div{
+        margin: 0 10px;
+    }
+
+    .Progress{
+        width: 150px;
+    }
+
+    .volume{
+        width: 100px;
+    }
+
+    #map {
+        height: 360px;
+    }
+}
+
+@media (max-width: 529px){
+    header{
+        display: block;
+    }
+
+    .navigation{
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .navigation a{
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .navigation img{
+        display: block;
+        margin-left: 60%;
+    }
+
+    .navigation:hover .navigation-top{
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+    }
+
+    .navigation-top{
+        display: none;
+    }
+    
+    .welcome{
+        height: 560px;
+        background: #000;
+    }
+    
+    .welcome h1{
+        font-size: 50px;
+        line-height: 60px;
+       }
+    
+    .welcome h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .explore-button{
+        width: 300px;
+        height: 70px;
+        font-size: 22px;
+        line-height: 26px;
+    }   
+
+    .place img{
+        width: 300px;
+        height: 195px;
+    }
+
+    .places li{
+        width: 300px;
+        margin: 0;
+    }
+
+    .place p{
+        width: 300px;
+    }
+
+    .place.expanded img{
+        min-width: 300px;
+        width: 90%;
+    }
+
+    .container h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    .container{
+        max-width: 360px;
+    }
+
+    .controls img{
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+    }
+    
+    .controls div{
+        margin: 0 5px;
+    }
+
+    .Progress{
+        width: 100px;
+    }
+
+    .volume{
+        width: 70px;
+    }
+
+    #map {
+        height: 360px;
+    }
+}

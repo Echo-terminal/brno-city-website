@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Brno</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <img src="./assets/burger-menu.svg" alt="">
+            <ul class="navigation-top">
+                <li><a href="#Welcome">Welcome</a></li>
+                <li><a href="#Places">Popular Places</a></li>
+                <li><a href="#Video">Video</a></li>
+                <li><a href="#Map">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Welcome" class="welcome">
+            <div class="welcome-container">    
+                <h1>Welcome</h1>
+                <h1>to the Brno</h1>
+                <h2>From fortress to innovation hub</h2>
+                <button class="explore-button" onclick="window.open('https://www.google.com/maps/@49.1948257,16.6083372,3a,75y,261.31h,92.17t/data=!3m7!1e1!3m5!1sX6Akw5L0jlRYen_ZdXzJ9g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DX6Akw5L0jlRYen_ZdXzJ9g%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D261.31061663235243%26pitch%3D-2.170311284015554%26thumbfov%3D90!7i13312!8i6656?coh=205410&entry=ttu', '_blank')">Explore Virtual Brno</button>
+            </div>
+        </section>
+        <section id="Places" class="places">
+            <div class="container">
+                <h1>Popular Places</h1>
+                <hr>
+                <ul>
+                    <li class="place">
+                        <img src="./assets/images/capuchin-monastery.png" alt="">
+                        <h3>Capuchin Monastery</h3>
+                        <hr>
+                        <p class="short">The Capuchin Monastery in Brno is a historic site renowned for its tranquil ambiance, elegant architecture, and fascinating museum, providing insight into centuries of spiritual tradition and cultural heritage.</p>
+                        <p class="full hidden">Nestled in Brno's bustling city center, the Capuchin Monastery is a haven of tranquility and spirituality. Established in the 17th century, this historic site boasts elegant architecture characterized by simplicity and grace. Visitors are invited to explore the monastery's peaceful courtyards and lush gardens, providing a serene retreat from the urban hustle.
+                            <br>
+                            At the heart of the monastery lies its captivating museum, housing a rich collection of religious artifacts and historical treasures. From ancient relics to exquisite artwork, the museum offers insight into the monastery's centuries-old legacy and its profound impact on local culture and spirituality.
+                            <br>
+                            Whether admiring the monastery's architectural beauty, exploring its museum, or simply enjoying a quiet moment of reflection in its scenic surroundings, the Capuchin Monastery promises an enriching experience for visitors seeking a glimpse into Brno's cultural and spiritual heritage.</p>
+                    </li>
+                    <li class="place">
+                        <img src="./assets/images/freedom-square.png" alt="">
+                        <h3>Freedom Square</h3>
+                        <hr>
+                        <p class="short">Freedom Square is a bustling public space in Brno, known for its vibrant atmosphere and historical significance.</p>
+                        <p class="full hidden">Freedom Square, also known as Namesti Svobody, is one of Brno's most iconic landmarks. Surrounded by historic buildings and bustling cafes, it serves as the city's main square and cultural hub. Visitors can admire the stunning architecture, explore nearby attractions, or simply soak in the lively ambiance of this vibrant public space. From cultural events to political demonstrations, Freedom Square has been witness to numerous significant moments throughout Brno's history. It's a must-visit destination for anyone looking to experience the pulse of the city and immerse themselves in its rich cultural tapestry.</p>
+                    </li>
+                    <li class="place">
+                        <img src="./assets/images/old_town_hall.png" alt="">
+                        <h3>Old Town Hall</h3>
+                        <hr>
+                        <p class="short">The Old Town Hall in Brno is a historic landmark showcasing architectural charm and historical significance.</p>
+                        <p class="full hidden">The Old Town Hall stands as a testament to Brno's rich history and architectural heritage. Dating back centuries, this iconic building features a blend of Gothic and Renaissance styles, reflecting the city's diverse cultural influences. Visitors can admire the intricate facades, climb the tower for panoramic views of the city, and explore the building's interior, which houses a museum showcasing artifacts and exhibits detailing Brno's past. From hosting civic events to serving as a symbol of civic pride, the Old Town Hall continues to play a vital role in Brno's cultural landscape, making it a must-see destination for history enthusiasts and architecture lovers alike.</p>
+                    </li>
+                    <li class="place">
+                        <img src="./assets/images/Spilberk_Castle.png" alt="">
+                        <h3>Spilberk Castle</h3>
+                        <hr>
+                        <p class="short">Spilberk Castle is a historic fortress perched atop a hill in Brno, offering panoramic views of the city and a glimpse into its storied past.</p>
+                        <p class="full hidden">Spilberk Castle, majestically overlooking the city of Brno, is a symbol of strength and resilience. Built in the 13th century, the castle has witnessed centuries of history, serving as a fortress, royal residence, and even a prison. Its commanding position atop Petrov Hill affords visitors breathtaking views of Brno and the surrounding landscape.
+                            <br>
+                            Stepping inside the castle walls, visitors are transported back in time, exploring its ramparts, courtyards, and historic chambers. Exhibits within the castle provide insight into its role in shaping the region's history, from medieval fortification to modern cultural center.
+                            <br>
+                            Despite its tumultuous past, Spilberk Castle now stands as a beacon of cultural heritage, hosting events, concerts, and exhibitions that celebrate its rich legacy. Whether wandering through its medieval halls or simply enjoying the panoramic vistas from its towers, a visit to Spilberk Castle offers a captivating journey through Brno's fascinating past.</p>
+                    </li>
+                    <li class="place">
+                        <img src="./assets/images/vegetable-market.png" alt="">
+                        <h3>Vegetable Market</h3>
+                        <hr>
+                        <p class="short">The Vegetable Market in Brno is a vibrant hub of local culture and commerce, offering fresh produce, artisanal goods, and a lively atmosphere.</p>
+                        <p class="full hidden">The Vegetable Market in Brno is a vibrant hub, pulsating with energy and color, embodying the city's dynamic spirit. Local farmers proudly display their seasonal bounty, while artisans offer handcrafted wares, from intricately woven textiles to delicate ceramics.
+                            <br>
+                            Beneath the market's bustling exterior lies a hidden treasure: ancient underground tunnels dating back centuries. Guided tours lead curious explorers through these labyrinthine corridors, offering a glimpse into Brno's rich history.
+                            <br>
+                            Beyond its role as a marketplace, the Vegetable Market is a cultural melting pot where locals and tourists converge to savor culinary delights and soak in the vibrant atmosphere.</p>
+                    </li>
+                    <li class="place">
+                        <img src="./assets/images/vila-tugendhat.png" alt="">
+                        <h3>Vila Tugendhat</h3>
+                        <hr>
+                        <p class="short">Vila Tugendhat in Brno is a symbol of modern architecture and innovation, built in the 1930s in the functionalist style, embodying elegance and cutting-edge technology.</p>
+                        <p class="full hidden">Vila Tugendhat is an epitome of modern design and advanced technology. Constructed in the 1930s by architect Ludwig Mies van der Rohe for the Tugendhat family, it became a symbol of innovation and luxury. Its open floor plan, use of glass, and automatic devices for control made it unique for its time.
+                            <br>
+                            Today, Vila Tugendhat is recognized as a UNESCO World Heritage Site and attracts thousands of tourists and architectural enthusiasts. Its spacious halls, minimalist design, and cutting-edge technology leave lasting impressions, while tours of the villa delve into the history and design solutions of this remarkable architectural masterpiece.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="Video" class="video">
+            <div class="container">
+                <h1>Drone Video</h1>
+                <hr>
+                <div class="player">
+                    <video id="vid" ><source src="./assets/video/Drone_Video.mp4" type="video/mp4"></video>
+                    <div class="controls">
+                        <div class="controls-set">
+                            <div id="controls_-3" class="controls_-3"><img src="./assets/vid_controls/backward.svg" alt=""></div>
+                            <div id="controls_play" class="controls_play"><img id="playBtn" src="./assets/vid_controls/min-play.svg"  alt="playBtn"></div>
+                            <div id="controls_+3" class="controls_+3"><img src="./assets/vid_controls/forward.svg" alt=""></div>
+                        </div>
+                        <input id="progress" class="scroll-bar Progress" type="range" value="47" step="0.1">
+                        <div class="volume-set">
+                            <img src="./assets/vid_controls/volume.svg" alt="volume-img">
+                            <input id="volume" type="range" class="scroll-bar volume" min="0" max="10" value="5" step="0.1">
+                        </div>
+                        <div id="FullscreenBtn"><img src="./assets/vid_controls/fullscreen.svg" alt=""></div>
+                
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Map">
+            <div class="container">
+                <h1>Interactive Map</h1>
+                <hr>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#Welcome">Welcome</a></li>
+                <li><a href="#Places">Popular Places</a></li>
+                <li><a href="#Video">Video</a></li>
+                <li><a href="#Map">Map</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
