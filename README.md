@@ -1,4 +1,4 @@
-Brno City Website - Educational Project
+#Brno City Website - Educational Project
 Overview
 Welcome to the Brno City Website project! This project is a simple and interactive website that serves as a digital visit card for the city of Brno, Czech Republic. It includes a map highlighting popular locations in the city, as well as a video player featuring a drone flight over the city.
 
