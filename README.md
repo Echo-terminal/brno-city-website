@@ -56,29 +56,6 @@ Clone the Repository:
   Interact with the map to discover Brno's top attractions.
   Watch the drone footage to get a bird's eye view of the city.
 
-## Project Structure
-
-  Here's an overview of the project's structure:
-
-brno-city-website/
-│
-├── css/
-│   └── styles.css        # Main stylesheet for the website
-│
-├── js/
-│   ├── map.js            # JavaScript for the interactive map
-│   └── player.js         # JavaScript for the video player
-│
-├── images/
-│   └── landmarks/        # Images of Brno landmarks and attractions
-│
-├── video/
-│   └── brno-drone.mp4    # Drone footage of Brno
-│
-├── index.html            # Main HTML file
-│
-└── README.md             # Project documentation
-
 ## Contributing
   As this project is for educational purposes, contributions are welcome! Whether you find a bug, have suggestions for improvements, or want to add new features, feel free to fork the repository and submit a pull request.
 
