@@ -132,8 +132,13 @@ li{
 }
 
 .place img{
+    aspect-ratio: 16/9;
+    width: 420px;
+    transition: 0.3s;
+}
+
+.place img:hover{
     width: 440px;
-    height: 285px;
 }
 
 .place h3{
@@ -507,8 +512,12 @@ footer a{
     }   
 
     .place img{
+        width: 280px;
+        transition: 0.3s;
+    }
+
+    .place img:hover{
         width: 300px;
-        height: 195px;
     }
 
     .places li{
